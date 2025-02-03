@@ -51,9 +51,10 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  min-height: auto;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.5s ease-out;
+  transition: max-height 0.8s ease-out;
 }
 
 .content p {
@@ -176,6 +177,7 @@ label::before {
   content: "+";
   margin-right: 1rem;
   font-size: 2rem;
+  transition: transform 0.3s ease;
 }
 
 input[type="checkbox"] {
@@ -184,12 +186,14 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked + label::before {
   content: "-";
+  transform: rotate(180deg);
+  margin-left: 8px;
 }
 
 .ul-list-accordion .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease;
+  transition: max-height 0.5s ease;
 }
 
 input[type="checkbox"]:checked + label + .content {
