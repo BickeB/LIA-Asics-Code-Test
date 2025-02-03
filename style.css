@@ -144,12 +144,13 @@ h2 {
 }
 
 #underpronation-container {
-  margin-left: 7.3rem;
+  margin-left: 7rem;
 }
 
 .container-neutral-underpronation {
   display: flex;
   justify-content: space-evenly;
+  text-wrap-style: balance;
 }
 
 h3 {
